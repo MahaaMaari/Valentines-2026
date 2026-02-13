@@ -1,20 +1,21 @@
 import './App.css';
 import { useNavigate } from "react-router-dom";
-import background from "./assets/Disney Land.png";
+import img1 from "./assets/Disney Land.png";
+import img2 from "./assets/VinWonders.png";
+import img3 from "./assets/final.png";
+import img4 from "./assets/tajmahal.png";
+import heart1 from "./assets/heart1.png";
+import heart2 from "./assets/heart2.png";
+import heart3 from "./assets/heart3.png";
+import heart4 from "./assets/heart4.png";
+import heart5 from "./assets/heart5.png";
+import heart6 from "./assets/heart6.png";
+import img5 from "./assets/dinner.png";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { useEffect, useState } from "react";
+import background from "./assets/dinner.png";
 const Travel = () => {
-    const ImagesPreLoad = ["./assets/Disney Land.png",
-        "./assets/dinner.png",
-        "./assets/VinWonders.png",
-        "./assets/heart1.png",
-        "./assets/heart2.png",
-        "./assets/heart3.png",
-        "./assets/heart4.png",
-        "./assets/heart5.png",
-        "./assets/heart6.png",
-        "./assets/tajmahal.png",
-        "./assets/final.png"];
+    const ImagesPreLoad = [heart1, heart2, heart3, heart4, heart5, heart6,img1,img2,img3,img4,img5];
     const navigate = useNavigate();
     const [loaded, setLoaded] = useState(false);
     useEffect(() => {

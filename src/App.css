@@ -268,42 +268,6 @@ button {
   align-items: center;
   padding: 60px;
 }
-
-.leftForever::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  width: 50;
-  height: 100%;
-  background: linear-gradient(to right, transparent, #ffbf00);
-}
-
-.leftForever::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 25px;
-  width: 100%;
-  background: linear-gradient(to top, transparent, #ffbf00);
-}
-
-.rightForever::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  height: 25px;
-  width: 100%;
-  background: linear-gradient(to bottom, transparent, #ffbf00);
-}
-
-.rightForever::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 10px;
-  height: 100%;
-  background: linear-gradient(to left, transparent, #ffbf00);
-}
 .leftTravel {
   flex: 1;
   height: 100%;
@@ -322,42 +286,6 @@ button {
   justify-content: center;
   align-items: center;
   padding: 60px;
-}
-
-.leftTravel::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  width: 75px;
-  height: 100%;
-  background: linear-gradient(to right, transparent, #0c7ba7);
-}
-
-.leftTravel::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 25px;
-  width: 100%;
-  background: linear-gradient(to top, transparent, #0c7ba7);
-}
-
-.rightTravel::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  height: 25px;
-  width: 100%;
-  background: linear-gradient(to bottom, transparent, #0c7ba7);
-}
-
-.rightTravel::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 50px;
-  height: 100%;
-  background: linear-gradient(to left, transparent, #0c7ba7);
 }
 .leftDreams {
   flex: 1;
@@ -378,42 +306,6 @@ button {
   align-items: center;
   padding: 60px;
 }
-
-.leftDreams::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  width: 75px;
-  height: 100%;
-  background: linear-gradient(to right, transparent, #f0a51b);
-}
-
-.leftDreams::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 25px;
-  width: 100%;
-  background: linear-gradient(to top, transparent, #f0a51b);
-}
-
-.rightDreams::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  height: 25px;
-  width: 100%;
-  background: linear-gradient(to bottom, transparent, #f0a51b);
-}
-
-.rightDreams::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 50px;
-  height: 100%;
-  background: linear-gradient(to left, transparent, #f0a51b);
-}
 .leftLast {
   flex: 1;
   height: 100%;
@@ -432,33 +324,6 @@ button {
   justify-content: center;
   align-items: center;
   padding: 60px;
-}
-
-.leftLast::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 25px;
-  width: 100%;
-  background: linear-gradient(to top, transparent, #f7f2dd);
-}
-
-.rightLast::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  height: 25px;
-  width: 100%;
-  background: linear-gradient(to bottom, transparent, #f7f2dd);
-}
-
-.rightLast::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 75px;
-  height: 100%;
-  background: linear-gradient(to left, transparent, #d6933a);
 }
 .final-overlay {
   position: fixed;
@@ -534,3 +399,72 @@ button {
   animation: heartbeat .5s ease-in-out infinite;;
 }
 
+
+@media (max-width: 768px) {
+
+  .container {
+    flex-direction: column;
+    height: auto;          /* allow natural height */
+    min-height: 100vh;     /* still fill screen */
+    overflow: visible;     /* allow scroll */
+  }
+
+  html, body {
+    overflow-x: hidden;
+  }
+
+  /* Image section */
+  .left,
+  .leftForever,
+  .leftTravel,
+  .leftDreams,
+  .leftLast {
+    width: 100%;
+    height: auto;
+  }
+
+  .left img,
+  .leftForever img,
+  .leftTravel img,
+  .leftDreams img,
+  .leftLast img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* Right section */
+  .rightForever,
+  .rightTravel,
+  .rightDreams,
+  .rightLast {
+    width: 100%;
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  /* Adjust text sizing */
+  .text-content h1,
+  .valentine-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .valentine-content h2,
+  .text-content p {
+    font-size: 1rem;
+  }
+
+  /* Make arrows fixed at bottom */
+  .next-arrow,
+  .back-arrow {
+    position: fixed;
+    bottom: 20px;
+    top: auto;
+    transform: none;
+    font-size: 2.5rem;
+  }
+
+  .next-arrow { right: 20px; }
+  .back-arrow { left: 20px; }
+
+}

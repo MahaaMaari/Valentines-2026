@@ -48,7 +48,7 @@ const Travel = () => {
 
             <div className="rightTravel">
                 <div className="text-content">
-                    <h1>I Promise To Travel The World With You</h1>
+                    <h1>I Wish To Travel The World With You</h1>
                     <p>
                         From quiet mountain mornings
                         to oceans that kiss golden sunsets,

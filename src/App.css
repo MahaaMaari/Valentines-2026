@@ -428,19 +428,10 @@ button {
   flex: 1;
   height: 100%;
   display: flex;
-  background: #f4c430;
+  background: #ffffff;
   justify-content: center;
   align-items: center;
   padding: 60px;
-}
-
-.leftLast::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  width: 75px;
-  height: 100%;
-  background: linear-gradient(to right, transparent, #ddc65e);
 }
 
 .leftLast::before {

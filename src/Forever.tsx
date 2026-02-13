@@ -16,7 +16,7 @@ const Forever = () => {
 
       <div className="rightForever">
         <div className="text-content">
-          <h1>I Promise To Be With You Forever</h1>
+          <h1>I Want To Be With You Forever</h1>
           <p>
             In all your dreams, in all your fears,
             in your laughter and in your tears —

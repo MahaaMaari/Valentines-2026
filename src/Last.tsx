@@ -52,8 +52,6 @@ const Last = () => {
             <div className="rightLast valentine-bg">
                 <div className="valentine-content">
 
-                    <h2>I Promise To Try My Best To Keep My Promises.</h2>
-
                     <div className="heart-wrapper">
                         {hearts.map((heart, index) => (
                             <img
@@ -65,7 +63,7 @@ const Last = () => {
                         ))}
                     </div>
 
-                    <h1>Will you be my Valentine?</h1>
+                    <h1>Will you be my Valentine? For Now and Forever</h1>
 
                     <div className="button-row">
                         <button className="yes-btn" style={{

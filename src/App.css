@@ -540,6 +540,6 @@ button {
 }
 
 .loadingHeart{
-  animation: heartbeat 2s ease-in-out infinite;;
+  animation: heartbeat .5s ease-in-out infinite;;
 }
 

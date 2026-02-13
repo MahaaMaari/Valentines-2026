@@ -63,7 +63,7 @@ const Last = () => {
                         ))}
                     </div>
 
-                    <h1>Will you be my Valentine? For Now and Forever</h1>
+                    <h1>Will you be my Valentine?</h1>
 
                     <div className="button-row">
                         <button className="yes-btn" style={{
@@ -88,7 +88,7 @@ const Last = () => {
             {showOverlay && (
                 <div className="final-overlay">
                     <div className="overlay-content">
-                        <h1>Stop playing with my heart 💔</h1>
+                        <h1>Stop Playing With My Heart 💔</h1>
                         <h2>Just say Yes ❤️</h2>
 
                         <button className="big-yes-btn" onClick={()=>{navigate('/five')}}>

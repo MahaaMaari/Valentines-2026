@@ -444,9 +444,11 @@ button {
   }
 
   /* Adjust text sizing */
-  .text-content h1,
-  .valentine-content h1 {
+  .text-content h1 {
     font-size: 1.8rem;
+  }
+  .valentine-content h1 {
+    font-size: 1.5rem;
   }
 
   .valentine-content h2,

@@ -52,7 +52,7 @@ const Last = () => {
             <div className="rightLast valentine-bg">
                 <div className="valentine-content">
 
-                    <h2>I promise to try my best to keep my promises.</h2>
+                    <h2>I Promise To Try My Best To Keep My Promises.</h2>
 
                     <div className="heart-wrapper">
                         {hearts.map((heart, index) => (

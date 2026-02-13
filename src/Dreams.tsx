@@ -15,11 +15,11 @@ const Dreams = () => {
 
             <div className="rightDreams">
                 <div className="text-content">
-                    <h1>I Promise To try my best to fulfill your Dreams</h1>
+                    <h1>I Promise To Try My Best To Fulfill Your Dreams</h1>
                     <p>
                         Together we’ll build the life you imagine,
                         step by step, dream by dream —
-                        until everything you wished for
+                        until everything we wished for
                         becomes something we lived.
                     </p>
                 </div>

@@ -1,0 +1,531 @@
+/* Remove default spacing */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Fullscreen container */
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+/* LEFT SIDE (Image) */
+.left {
+  flex: 1;
+  height: 100%;
+}
+
+.left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* TEXT */
+.text-content {
+  max-width: 500px;
+  text-align: center;
+  animation: slideUp 1.5s ease-out forwards;
+  opacity: 0;
+}
+
+.text-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.text-content p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Animation */
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.next-arrow {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  /* pointer on hover */
+  z-index: 100;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.back-arrow {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  /* pointer on hover */
+  z-index: 100;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.next-arrow:hover {
+  transform: translateY(-50%) scale(1.2);
+  opacity: 0.8;
+}
+
+.back-arrow:hover {
+  transform: translateY(-50%) scale(1.2);
+  opacity: 0.8;
+}
+
+.heart-wrapper {
+  width: 220px;
+  /* fixed width */
+  height: 220px;
+  /* fixed height */
+  position: relative;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+.heart-1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  /* IMPORTANT */
+  animation: heartbeat 2s ease-in-out infinite;
+}
+
+.heart-2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  /* IMPORTANT */
+  animation: heartbeat 3s ease-in-out infinite;
+}
+
+.heart-3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  /* IMPORTANT */
+  animation: heartbeat 4s ease-in-out infinite;
+}
+
+.heart-rest {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  /* IMPORTANT */
+  animation: heartbeat 6s ease-in-out infinite;
+}
+
+.heart-image-visible {
+  opacity: 1;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+
+  15% {
+    transform: scale(1.1);
+  }
+
+  30% {
+    transform: scale(1);
+  }
+
+  45% {
+    transform: scale(1.08);
+  }
+
+  60% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.valentine-content {
+  text-align: center;
+  max-width: 500px;
+
+}
+
+.valentine-content h1 {
+  margin: 20px 0;
+  font-size: 2.5rem;
+}
+
+.valentine-content h2 {
+  font-size: 1.4rem;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+
+button {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.yes-btn {
+  background: #28a745;
+  color: white;
+}
+
+.yes-btn:hover {
+  transform: scale(1.1);
+}
+
+.no-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.no-btn:hover {
+  transform: scale(1.1);
+}
+.leftForever {
+  flex: 1;
+  height: 100%;
+}
+
+.leftForever img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.rightForever {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  background: #f4c430;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+
+.leftForever::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 50;
+  height: 100%;
+  background: linear-gradient(to right, transparent, #ffbf00);
+}
+
+.leftForever::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 25px;
+  width: 100%;
+  background: linear-gradient(to top, transparent, #ffbf00);
+}
+
+.rightForever::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 25px;
+  width: 100%;
+  background: linear-gradient(to bottom, transparent, #ffbf00);
+}
+
+.rightForever::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  background: linear-gradient(to left, transparent, #ffbf00);
+}
+.leftTravel {
+  flex: 1;
+  height: 100%;
+}
+
+.leftTravel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.rightTravel {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  background: #0c7ba7;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+
+.leftTravel::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 75px;
+  height: 100%;
+  background: linear-gradient(to right, transparent, #0c7ba7);
+}
+
+.leftTravel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 25px;
+  width: 100%;
+  background: linear-gradient(to top, transparent, #0c7ba7);
+}
+
+.rightTravel::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 25px;
+  width: 100%;
+  background: linear-gradient(to bottom, transparent, #0c7ba7);
+}
+
+.rightTravel::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  background: linear-gradient(to left, transparent, #0c7ba7);
+}
+.leftDreams {
+  flex: 1;
+  height: 100%;
+}
+
+.leftDreams img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.rightDreams {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  background: #f0a51b;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+
+.leftDreams::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 75px;
+  height: 100%;
+  background: linear-gradient(to right, transparent, #f0a51b);
+}
+
+.leftDreams::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 25px;
+  width: 100%;
+  background: linear-gradient(to top, transparent, #f0a51b);
+}
+
+.rightDreams::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 25px;
+  width: 100%;
+  background: linear-gradient(to bottom, transparent, #f0a51b);
+}
+
+.rightDreams::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  background: linear-gradient(to left, transparent, #f0a51b);
+}
+.leftLast {
+  flex: 1;
+  height: 100%;
+}
+
+.leftLast img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.rightLast {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  background: #f4c430;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+
+.leftLast::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 75px;
+  height: 100%;
+  background: linear-gradient(to right, transparent, #ddc65e);
+}
+
+.leftLast::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 25px;
+  width: 100%;
+  background: linear-gradient(to top, transparent, #f7f2dd);
+}
+
+.rightLast::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 25px;
+  width: 100%;
+  background: linear-gradient(to bottom, transparent, #f7f2dd);
+}
+
+.rightLast::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 75px;
+  height: 100%;
+  background: linear-gradient(to left, transparent, #d6933a);
+}
+.final-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeInOverlay 0.5s ease forwards;
+}
+
+.overlay-content {
+  text-align: center;
+  color: white;
+  animation: popIn 0.5s ease forwards;
+}
+
+.overlay-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.overlay-content h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #ffccd5;
+}
+
+.big-yes-btn {
+  font-size: 2rem;
+  padding: 20px 60px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.big-yes-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeInOverlay {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

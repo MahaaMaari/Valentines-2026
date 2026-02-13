@@ -36,7 +36,7 @@ const Travel = () => {
     if (!loaded) {
         return (
             <div className="loader-screen">
-                <h1>Loading Love... ❤️</h1>
+                <h1>Loading Love... <span className='loadingHeart'>❤️</span></h1>
             </div>
         );
     }

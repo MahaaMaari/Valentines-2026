@@ -405,7 +405,8 @@ button {
   .container {
     flex-direction: column;
     height: auto;          /* allow natural height */
-    min-height: 100vh;     /* still fill screen */
+    min-height: 100vh;
+    min-height: 100svh;     /* still fill screen */
     overflow: visible;     /* allow scroll */
   }
 
@@ -440,7 +441,6 @@ button {
   .rightLast {
     width: 100%;
     height: auto;
-    padding: 30px 20px;
   }
 
   /* Adjust text sizing */

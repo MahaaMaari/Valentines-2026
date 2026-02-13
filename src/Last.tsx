@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import background from "./assets/dinner.png";
+import background from "./assets/VinWonders.png";
 import { HiArrowNarrowLeft } from "react-icons/hi";
 import "./App.css";
 import heart1 from "./assets/heart1.png";

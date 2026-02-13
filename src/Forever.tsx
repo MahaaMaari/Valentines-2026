@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import background from "./assets/VinWonders.png";
+import background from "./assets/bike us gen.png";
 import "./App.css";
 import { HiArrowNarrowRight, HiArrowNarrowLeft } from "react-icons/hi";
 const Forever = () => {

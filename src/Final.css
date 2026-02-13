@@ -1,7 +1,8 @@
 .final-page {
   height: 100vh;
   width: 100vw;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   position: relative;
   display: flex;
@@ -67,41 +68,5 @@
   0% { transform: translateY(0); }
   50% { transform: translateY(-8px); }
   100% { transform: translateY(0); }
-}
-@media (max-width: 768px) {
-
-  .final-page {
-    height: auto;              /* allow natural height */
-    min-height: 100vh;         /* still fill screen */
-    width: 100%;
-    overflow: visible;         /* allow scrolling */
-    padding: 40px 20px;        /* breathing space */
-    align-items: flex-start;   /* prevent vertical squash */
-    background-size: contain;
-    background-position: center;
-  }
-
-  .final-content {
-    padding: 20px;
-    max-width: 100%;
-  }
-
-  .final-content h1 {
-    font-size: 2rem;
-  }
-
-  .final-content p {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-
-  .final-content h2 {
-    font-size: 1.3rem;
-  }
-
-  .decorations {
-    font-size: 1.5rem;
-  }
-
 }
 

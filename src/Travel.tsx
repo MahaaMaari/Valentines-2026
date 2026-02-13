@@ -13,7 +13,6 @@ import heart6 from "./assets/heart6.png";
 import img5 from "./assets/dinner.png";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { useEffect, useState } from "react";
-import background from "./assets/dinner.png";
 const Travel = () => {
     const ImagesPreLoad = [heart1, heart2, heart3, heart4, heart5, heart6,img1,img2,img3,img4,img5];
     const navigate = useNavigate();
@@ -43,7 +42,7 @@ const Travel = () => {
     return (
         <div className="container">
             <div className="leftTravel">
-                <img src={background} alt="Ghibli" />
+                <img src={img5} alt="Ghibli" />
             </div>
 
             <div className="rightTravel">
